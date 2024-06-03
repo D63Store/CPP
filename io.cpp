@@ -1,18 +1,15 @@
-#include <iostream> 
-#include <string>
+#include "io.h"
+#include <iostream>
 
 using namespace std;
 
 int readNumber() {
-	cout << "Введите число >>> ";
-
-	int number;
-	cin >> number;
-
-	return number;
+    cout << "Введите число >>> ";
+    int number;
+    cin >> number;
+    return number;
 }
 
-
 void writeAnswer(int number) {
-	cout << to_string(number) << endl;
+    cout << "Результат: " << number << endl;
 }
