@@ -1,18 +1,18 @@
 ﻿#include "constants.h"
-
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-	std::cout << "How many students are in your class? ";
+	cout << "How many students are in your class? ";
 	int students{};
-	std::cin >> students;
+	cin >> students;
 
 
 	if (students > constants::max_class_size)
-		std::cout << "There are too many students in this class";
+		cout << "There are too many students in this class";
 	else
-		std::cout << "This class isn't too large";
+		cout << "This class isn't too large";
 
-	return 0;
 }
